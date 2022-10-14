@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "raw",
+      "source": "#На вход подается строка, состоящая из одного числа. Напишите программу, которая удваивает его.",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "a=int(input())\nprint(a*2)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": "#Вводится число. Вывести его квадрат.",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "a=int(input())\nprint(a**2)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": "#Вводятся часы, минуты и секунды. Вывести, сколько секунд прошло с полуночи.\nВывести, какая часть суток прошла (число от 0 до 1).",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "def foo(h, m, s):\n    hour=h*3600\n    min=m*60\n    local=hour+mim+s\n    return local\na = int(input())\nb = int(input())\nc = int(input())\nx=foo(a,b,c)\nx/24",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "raw",
+      "source": "Вводится число. Вывести, оканчивается ли оно на цифру 7, не используя приведение к строке и операции над строками",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "def foo1(a):\n    if a%10==7:\n        print(\"TRUE\")",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "raw",
+      "source": "Вводятся коэффициенты уравнения ax2+bx+c=0. Вывести его корни(не забыть проверить, что a не равно 0)",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "def foo(a,b,c):\n    if a==0:\n        x1=-c//b\n    else: \n        d=b**2-4ac\n        if d<0:\n            print(\"НЕТ КОРНЕЙ\")\n        if d==0:\n            x1=-b//(2a)\n            print(x1)\n        else :\n            x1=(-b+d**(1/2))//2a\n            x2=(-b-d**(1/2))//2a\n            print(x1,x2)  ",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
